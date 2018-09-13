@@ -3,35 +3,28 @@ import java.time.LocalTime;
 public class Clock {
 
 
-    public double calculateAcuteAngleBetweenArrows(LocalTime time) {
-        // get arrows positions on Clock
-        double hour = time.getHour();
-        if (hour > 12) {
-            hour = (hour - 12);
+    public double calculateAcuteAngleBetweenArrows(LocalTime timeInput) {
+
+        double hourCastTo12 = timeInput.getHour();
+        if (hourCastTo12 > 12) {
+            hourCastTo12 = (hourCastTo12 - 12);
         }
-        double minute = time.getMinute();
 
-        //Get minute arrow angle
+        double minute = timeInput.getMinute();
+
+        return applyAngleCalculatins(minute, hourCastTo12);
+    }
+
+
+    private double applyAngleCalculatins(double minute, double hourCastTo12) {
+
         double minuteArrowAngle;
-//        if ( minute == 0) {
-//            minuteArrowAngle = 0;
-//        }
-//        else {
-            minuteArrowAngle = 360 * minute / 60;
-//        }
+        minuteArrowAngle = 360 * minute / 60;
 
-        //Get hour arrow angle
         double hourArrowAngle;
-//        if (hour == 0){
-//            hourArrowAngle = 0;
-//        }
-//        else {
-            hourArrowAngle = (360 * hour / 12) + minuteArrowAngle / 12;
-//        }
-
+        hourArrowAngle = (360 * hourCastTo12 / 12) + minuteArrowAngle / 12;
 
         return Math.abs(hourArrowAngle - minuteArrowAngle);
     }
-
 
 }
