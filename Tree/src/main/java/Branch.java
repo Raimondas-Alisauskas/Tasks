@@ -9,7 +9,4 @@ public class Branch {
         return branches;
     }
 
-    public void setBranches(List<Branch> branches) {
-        this.branches = branches;
-    }
 }
