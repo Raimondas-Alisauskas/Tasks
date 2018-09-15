@@ -1,4 +1,4 @@
-public class TreeCalculator {
+public class HeightCalculator {
 
     /** Finds tree height. Height = number of generations + 1
      */

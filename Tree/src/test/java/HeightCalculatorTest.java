@@ -1,13 +1,13 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TreeCalculatorTest {
+public class HeightCalculatorTest {
 
     @Test
     public void findTreeHeight() {
 
         ManualPopulatorForTests populator = new ManualPopulatorForTests();
-        TreeCalculator calculator = new TreeCalculator();
+        HeightCalculator calculator = new HeightCalculator();
 
         Branch tree = populator.getTree();
 

@@ -1,9 +1,9 @@
-public class RunApp {
+public class App {
 
     public static void main(String[] args) {
 
         TreePopulator populator = new TreePopulator();
-        TreeCalculator calculator = new TreeCalculator();
+        HeightCalculator calculator = new HeightCalculator();
 
         //Tree with predefined number of branch's generations
         int numberOfGenerations = 5;
