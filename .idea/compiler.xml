@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Clock" />
-        <module name="TMP" />
         <module name="Tree" />
       </profile>
     </annotationProcessing>
