@@ -6,7 +6,7 @@ public class AngleCalculator {
     /**
      * Calculates acute angle between clock's arrows.
      * @param timeInput LocalTime format.
-     * @return returns angle is in degrees.
+     * @return angle is in degrees.
      */
     public double calculateAcuteAngleBetweenClocksArrows(LocalTime timeInput) {
 

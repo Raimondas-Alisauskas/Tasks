@@ -22,7 +22,7 @@ public class App {
         acuteAngle = angleCalculator.calculateAcuteAngleBetweenClocksArrows(timeInput);
 
         System.out.println();
-        System.out.println("The accute angle between angleCalculator's arrows is " + acuteAngle);
+        System.out.println("The accute angle between clock's arrows is " + acuteAngle);
     }
 
 }
